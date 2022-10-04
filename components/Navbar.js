@@ -19,27 +19,27 @@ const Navbar = () => {
         <div>
           <ul className="hidden md:flex">
             <Link href="/">
-              <li className="ml-10 text-sm uppercase hover:border-b hover:text-[#5651e5]">
+              <li className="ml-10 text-sm uppercase hover:-translate-y-0.5 ease-in duration-150 hover:text-[#5651e5]">
                 Home
               </li>
             </Link>
             <Link href="/">
-              <li className="ml-10 text-sm uppercase hover:border-b hover:text-[#5651e5]">
+              <li className="ml-10 text-sm uppercase hover:-translate-y-0.5 ease-in duration-150 hover:text-[#5651e5]">
                 About
               </li>
             </Link>
             <Link href="/">
-              <li className="ml-10 text-sm uppercase hover:border-b hover:text-[#5651e5]">
+              <li className="ml-10 text-sm uppercase hover:-translate-y-0.5 ease-in duration-150 hover:text-[#5651e5]">
                 Skills
               </li>
             </Link>
             <Link href="/">
-              <li className="ml-10 text-sm uppercase hover:border-b hover:text-[#5651e5]">
+              <li className="ml-10 text-sm uppercase hover:-translate-y-0.5 ease-in duration-150 hover:text-[#5651e5]">
                 Projects
               </li>
             </Link>
             <Link href="/">
-              <li className="ml-10 text-sm uppercase hover:border-b hover:text-[#5651e5]">
+              <li className="ml-10 text-sm uppercase hover:-translate-y-0.5 ease-in duration-150 hover:text-[#5651e5]">
                 Contact
               </li>
             </Link>
