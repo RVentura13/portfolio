@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import aboutImg from "/public/assets/about.jpg";
 
 const About = () => {
   return (
@@ -9,8 +10,10 @@ const About = () => {
           <p className="uppercase tracking-widest text-[#5651e5] text-xl">
             About
           </p>
-          <h2 className="py-4">Who I Am</h2>
-          <p className="py-2 text-gray-600">// I am not your normal developer</p>
+          <h2 className="py-4 text-gray-700">Who I Am</h2>
+          <p className="py-2 text-gray-600">
+            // I am not your normal developer
+          </p>
           <p className="py-2 text-gray-600">
             I specialize in building mobile responsive front-end UI applications
             that connect with API’s and other backend technologies. I’m
@@ -29,10 +32,12 @@ const About = () => {
             time I run Code Commerce, a Youtube channel where I teach web
             developement and various front-end technologies.
           </p>
-          <p className="py-2 text-gray-600 underline cursor-pointer">Check out some of my latest projects.</p>
+          <p className="py-2 text-gray-600 underline cursor-pointer">
+            Check out some of my latest projects.
+          </p>
         </div>
         <div className="w-full h-auto m-auto shadow-lg shadow-gray-400 p-4 rounded-xl flex justify-center items-center hover:scale-105 ease-in duration-300">
-            <Image className="rounded-xl" src="/assets/about.jpg" alt="About" width="640" height="800" />
+          <Image className="rounded-xl" src={aboutImg} alt="About" />
         </div>
       </div>
     </div>
