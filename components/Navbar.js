@@ -1,56 +1,108 @@
 import Image from "next/image";
 import Link from "next/link";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from "react-icons/ai";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { BsFillPersonLinesFill } from "react-icons/bs";
+import { useRouter } from "next/router";
 
 const Navbar = () => {
   const [nav, useNav] = useState(false);
+  const [shadow, setShadow] = useState(false);
+  const [navBg, setNavBg] = useState("#ecf0f3");
+  const [linkColor, setLinkColor] = useState("#1f2937");
+  const router = useRouter();
+
+  useEffect(() => {
+    if (
+      router.asPath === "/project01" ||
+      router.asPath === "/project02" ||
+      router.asPath === "/project03" ||
+      router.asPath === "/project04"
+    ) {
+      setNavBg("transparent");
+      setLinkColor("#ecf0f3");
+    } else {
+      setNavBg("#ecf0f3");
+      setLinkColor("#1f2937");
+    }
+  }, [router]);
 
   const handleNav = () => {
     useNav(!nav);
   };
 
+  useEffect(() => {
+    const handleShadow = () => {
+      if (window.scrollY >= 90) {
+        setShadow(true);
+      } else {
+        setShadow(false);
+      }
+    };
+    window.addEventListener("scroll", handleShadow);
+  }, []);
+
   return (
-    <div className="fixed w-full h-20 shadow-xl z-[100]">
+    <div
+      style={{ backgroundColor: `${navBg}` }}
+      className={
+        shadow
+          ? "fixed w-full h-24 shadow-xl z-[100]"
+          : "fixed w-full h-24 z-[100]"
+      }
+    >
       <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
-        <Image src="/assets/navLogo.svg" alt="Logo" width="70" height="70" />
+        <Link href="/">
+          <Image
+            className="cursor-pointer"
+            src="/assets/navLogo.svg"
+            alt="Logo"
+            width="70"
+            height="70"
+          />
+        </Link>
         <div>
-          <ul className="hidden md:flex">
+          <ul style={{ color: `${linkColor}` }} className="hidden md:flex">
             <Link href="/">
               <li className="ml-10 text-sm uppercase hover:-translate-y-0.5 ease-in duration-150 hover:text-[#5651e5]">
                 Home
               </li>
             </Link>
-            <Link href="/">
+            <Link href="/#about">
               <li className="ml-10 text-sm uppercase hover:-translate-y-0.5 ease-in duration-150 hover:text-[#5651e5]">
                 About
               </li>
             </Link>
-            <Link href="/">
+            <Link href="/#skills">
               <li className="ml-10 text-sm uppercase hover:-translate-y-0.5 ease-in duration-150 hover:text-[#5651e5]">
                 Skills
               </li>
             </Link>
-            <Link href="/">
+            <Link href="/#projects">
               <li className="ml-10 text-sm uppercase hover:-translate-y-0.5 ease-in duration-150 hover:text-[#5651e5]">
                 Projects
               </li>
             </Link>
-            <Link href="/">
+            <Link href="/#contact">
               <li className="ml-10 text-sm uppercase hover:-translate-y-0.5 ease-in duration-150 hover:text-[#5651e5]">
                 Contact
               </li>
             </Link>
           </ul>
-          <div onClick={handleNav} className="md:hidden">
+          <div
+            style={{ color: `${linkColor}` }}
+            onClick={handleNav}
+            className="md:hidden"
+          >
             <AiOutlineMenu size="25" />
           </div>
         </div>
       </div>
       <div
-        className={nav ? " md:hidden fixed left-0 top-0 w-full h-screen bg-black/70" : ""}
+        className={
+          nav ? " md:hidden fixed left-0 top-0 w-full h-screen bg-black/70" : ""
+        }
       >
         <div
           className={
@@ -61,17 +113,21 @@ const Navbar = () => {
         >
           <div>
             <div className="flex w-full justify-between items-center">
-              <Image
-                src="/assets/navLogo.svg"
-                alt="Logo"
-                width="70"
-                height="70"
-              />
+              <Link href="/">
+                <Image
+                  onClick={handleNav}
+                  className="cursor-pointer"
+                  src="/assets/navLogo.svg"
+                  alt="Logo"
+                  width="70"
+                  height="70"
+                />
+              </Link>
               <div
                 onClick={handleNav}
                 className="shadow-lg shadow-gray-400 p-3 cursor-pointer rounded-full hover:scale-110 ease-in duration-150"
               >
-                <AiOutlineClose className="" />
+                <AiOutlineClose />
               </div>
             </div>
             <div className="border-b border-gray-300 my-4">
@@ -83,19 +139,29 @@ const Navbar = () => {
           <div className="py-4 flex flex-col">
             <ul className="uppercase">
               <Link href="/">
-                <li className="py-4 text-sm">Home</li>
+                <li onClick={handleNav} className="py-4 text-sm">
+                  Home
+                </li>
               </Link>
-              <Link href="/">
-                <li className="py-4 text-sm">About</li>
+              <Link href="/#about">
+                <li onClick={handleNav} className="py-4 text-sm">
+                  About
+                </li>
               </Link>
-              <Link href="/">
-                <li className="py-4 text-sm">Skills</li>
+              <Link href="/#skills">
+                <li onClick={handleNav} className="py-4 text-sm">
+                  Skills
+                </li>
               </Link>
-              <Link href="/">
-                <li className="py-4 text-sm">Projects</li>
+              <Link href="/#projects">
+                <li onClick={handleNav} className="py-4 text-sm">
+                  Projects
+                </li>
               </Link>
-              <Link href="/">
-                <li className="py-4 text-sm">Contact</li>
+              <Link href="/#contact">
+                <li onClick={handleNav} className="py-4 text-sm">
+                  Contact
+                </li>
               </Link>
             </ul>
             <div className="pt-32">
