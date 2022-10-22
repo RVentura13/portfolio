@@ -7,7 +7,7 @@ import proyect04Img from "../public/assets/projects/04.jpg";
 
 const Projects = () => {
   return (
-    <div id="projects" className="w-full">
+    <div id="projects" className="w-full p-4">
       <div className="max-w-[1240px] mx-auto px-2 py-16">
         <p className="uppercase pt-10 text-xl text-[#5651e5] tracking-widest">
           Projects

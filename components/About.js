@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import aboutImg from "/public/assets/about.jpg";
+import Link from "next/link";
 
 const About = () => {
   return (
@@ -25,15 +26,13 @@ const About = () => {
             specific language, but choosing the best tool for the job.
           </p>
           <p className="py-2 text-gray-600">
-            I started web developement in 2013 managing multiple e-commerce
-            websites on CMS platforms such as WordPress, BigCommerce, and
-            Shopify. I have experience working directly with clients and taking
-            mock wireframes all the way to deployed applications. In my spare
-            time I run Code Commerce, a Youtube channel where I teach web
-            developement and various front-end technologies.
+            I started web development in 2018 doing different university
+            projects in different programming languages. I have developed
+            different projects as a practice of my skills which I show the most
+            important in this portfolio.
           </p>
           <p className="py-2 text-gray-600 underline cursor-pointer">
-            Check out some of my latest projects.
+            <Link href="/#projects">Check out some of my latest projects.</Link>
           </p>
         </div>
         <div className="w-full h-auto m-auto shadow-lg shadow-gray-400 p-4 rounded-xl flex justify-center items-center hover:scale-105 ease-in duration-300">
