@@ -13,7 +13,7 @@ const Main = () => {
             Let's build something legendary together
           </p>
           <h1 className="py-2 text-gray-700">
-            Hi, I'm <span className="text-[#5651e5]">Rony Ventura</span>
+            Hi, I'm <span className="text-[#313fef]">Rony Ventura</span>
           </h1>
           <h1 className="py-1 text-gray-700">Web Developer</h1>
           <p className=" py-4 text-gray-600 max-w-[70%] m-auto">
@@ -22,8 +22,11 @@ const Main = () => {
             I'm focused on building responsive front-end web applications while
             learning back-end technologies.
           </p>
+          <p className="uppercase p-8 text-gray-700 tracking-wider">
+                  Contact me
+                </p>
           <div className="flex items-center justify-between max-w-[330px] m-auto py-4">
-            <div className="rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-110 ease-in duration-150 text-3xl text-[#5651e5]">
+            <div className="rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-110 ease-in duration-150 text-3xl text-[#313fef]">
               <a
                 href="https://www.linkedin.com/in/rony-ventura-0034b5211/"
                 target="_blank"
@@ -33,7 +36,7 @@ const Main = () => {
               </a>
             </div>
 
-            <div className="rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-110 ease-in duration-150 text-3xl text-[#5651e5]">
+            <div className="rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-110 ease-in duration-150 text-3xl text-[#313fef]">
               <a
                 href="https://github.com/RVentura13"
                 target="_blank"
@@ -42,16 +45,16 @@ const Main = () => {
                 <FaGithub />
               </a>
             </div>
-            <div className="rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-110 ease-in duration-150 text-3xl text-[#5651e5]">
+            <div className="rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-110 ease-in duration-150 text-3xl text-[#313fef]">
               <a
-                href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#114;&#111;&#110;&#121;&#118;&#101;&#110;&#116;&#117;&#114;&#97;&#49;&#51;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;"
+                href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#105;&#110;&#102;&#111;&#64;&#114;&#118;&#101;&#110;&#116;&#117;&#114;&#97;&#46;&#100;&#101;&#118;"
                 target="_blank"
                 title="Send mail"
               >
                 <AiOutlineMail />
               </a>
             </div>
-            <div className="rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-110 ease-in duration-150 text-3xl text-[#5651e5]">
+            <div className="rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-110 ease-in duration-150 text-3xl text-[#313fef]">
               <a
                 href="assets/documents/cv.pdf"
                 download="CV Rony Ventura"

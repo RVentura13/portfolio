@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import navLogo from "/public/assets/navLogo.svg";
 import React, { useEffect, useState } from "react";
 import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from "react-icons/ai";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
@@ -52,12 +53,12 @@ const Navbar = () => {
           : "fixed w-full h-24 z-[100]"
       }
     >
-      <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
+      <div className="flex justify-between items-center w-full h-full px-2 2xl:px-14">
         <Link href="/">
-          <div>
+          <div className="mt-1">
             <Image
               className="cursor-pointer"
-              src="/assets/navLogo.svg"
+              src={navLogo}
               alt="Logo"
               width="70"
               height="70"
@@ -67,30 +68,30 @@ const Navbar = () => {
         <div>
           <ul style={{ color: `${linkColor}` }} className="hidden md:flex">
             <Link href="/">
-              <li className="ml-10 text-sm uppercase hover:-translate-y-0.5 ease-in duration-150 hover:text-[#5651e5]">
+              <li className="ml-10 text-sm uppercase hover:-translate-y-0.5 ease-in duration-150 hover:text-[#313fef]">
                 Home
               </li>
             </Link>
             <Link href="/#about">
-              <li className="ml-10 text-sm uppercase hover:-translate-y-0.5 ease-in duration-150 hover:text-[#5651e5]">
+              <li className="ml-10 text-sm uppercase hover:-translate-y-0.5 ease-in duration-150 hover:text-[#313fef]">
                 About
               </li>
             </Link>
             <Link href="/#skills">
-              <li className="ml-10 text-sm uppercase hover:-translate-y-0.5 ease-in duration-150 hover:text-[#5651e5]">
+              <li className="ml-10 text-sm uppercase hover:-translate-y-0.5 ease-in duration-150 hover:text-[#313fef]">
                 Skills
               </li>
             </Link>
             <Link href="/#projects">
-              <li className="ml-10 text-sm uppercase hover:-translate-y-0.5 ease-in duration-150 hover:text-[#5651e5]">
+              <li className="ml-10 text-sm uppercase hover:-translate-y-0.5 ease-in duration-150 hover:text-[#313fef]">
                 Projects
               </li>
             </Link>
-            <Link href="/#contact">
-              <li className="ml-10 text-sm uppercase hover:-translate-y-0.5 ease-in duration-150 hover:text-[#5651e5]">
+            {/* <Link href="/#contact">
+              <li className="ml-10 text-sm uppercase hover:-translate-y-0.5 ease-in duration-150 hover:text-[#313fef]">
                 Contact
               </li>
-            </Link>
+            </Link> */}
           </ul>
           <div
             style={{ color: `${linkColor}` }}
@@ -120,7 +121,7 @@ const Navbar = () => {
                   <Image
                     onClick={handleNav}
                     className="cursor-pointer"
-                    src="/assets/navLogo.svg"
+                    src={navLogo}
                     alt="Logo"
                     width="70"
                     height="70"
@@ -162,18 +163,18 @@ const Navbar = () => {
                   Projects
                 </li>
               </Link>
-              <Link href="/#contact">
+              {/* <Link href="/#contact">
                 <li onClick={handleNav} className="py-4 text-sm">
                   Contact
                 </li>
-              </Link>
+              </Link> */}
             </ul>
             <div className="pt-32">
-              <p className="uppercase tracking-widest text-[#5651e5]">
-                Let's Connect
+              <p className="uppercase tracking-widest text-[#313fef]">
+                Contact me
               </p>
               <div className="flex justify-between items-center my-4 w-full sm:w-[80%]">
-                <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-150 text-[#5651e5] text-3xl">
+                <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-150 text-[#313fef] text-3xl">
                   <a
                     href="https://www.linkedin.com/in/rony-ventura-0034b5211/"
                     target="_blank"
@@ -182,7 +183,7 @@ const Navbar = () => {
                     <FaLinkedinIn />
                   </a>
                 </div>
-                <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-150 text-[#5651e5] text-3xl">
+                <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-150 text-[#313fef] text-3xl">
                   <a
                     href="https://github.com/RVentura13"
                     target="_blank"
@@ -191,16 +192,16 @@ const Navbar = () => {
                     <FaGithub />
                   </a>
                 </div>
-                <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-150 text-[#5651e5] text-3xl">
+                <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-150 text-[#313fef] text-3xl">
                   <a
-                    href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#114;&#111;&#110;&#121;&#118;&#101;&#110;&#116;&#117;&#114;&#97;&#49;&#51;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;"
+                    href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#105;&#110;&#102;&#111;&#64;&#114;&#118;&#101;&#110;&#116;&#117;&#114;&#97;&#46;&#100;&#101;&#118;"
                     target="_blank"
                     title="Send mail"
                   >
                     <AiOutlineMail />
                   </a>
                 </div>
-                <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-150 text-[#5651e5] text-3xl">
+                <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-150 text-[#313fef] text-3xl">
                   <a
                     href="assets/documents/cv.pdf"
                     download="CV Rony Ventura"

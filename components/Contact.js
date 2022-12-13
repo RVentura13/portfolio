@@ -11,7 +11,7 @@ const Contact = () => {
   return (
     <div id="contact" className="w-full lg:h-screen">
       <div className="max-w-[1240px] m-auto px-2 py-16 w-full">
-        <p className="text-xl pt-10 tracking-widest uppercase text-[#5651e5]">
+        <p className="text-xl pt-10 tracking-widest uppercase text-[#313fef]">
           Contact
         </p>
         <h2 className="py-4 text-gray-700">Get In Touch</h2>
@@ -39,7 +39,7 @@ const Contact = () => {
                   Connect With Me
                 </p>
                 <div className="flex justify-between items-center py-4">
-                  <div className="rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-110 ease-in duration-200 focus:outline-none text-3xl text-[#5651e5]">
+                  <div className="rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-110 ease-in duration-200 focus:outline-none text-3xl text-[#313fef]">
                     <a
                       href="https://www.linkedin.com/in/rony-ventura-0034b5211/"
                       target="_blank"
@@ -48,7 +48,7 @@ const Contact = () => {
                       <FaLinkedinIn />
                     </a>
                   </div>
-                  <div className="rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-110 ease-in duration-200 text-3xl text-[#5651e5]">
+                  <div className="rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-110 ease-in duration-200 text-3xl text-[#313fef]">
                     <a
                       href="https://github.com/RVentura13"
                       target="_blank"
@@ -57,16 +57,16 @@ const Contact = () => {
                       <FaGithub />
                     </a>
                   </div>
-                  <div className="rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-110 ease-in duration-200 text-3xl text-[#5651e5]">
+                  <div className="rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-110 ease-in duration-200 text-3xl text-[#313fef]">
                     <a
-                      href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#114;&#111;&#110;&#121;&#118;&#101;&#110;&#116;&#117;&#114;&#97;&#49;&#51;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;"
+                      href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#105;&#110;&#102;&#111;&#64;&#114;&#118;&#101;&#110;&#116;&#117;&#114;&#97;&#46;&#100;&#101;&#118;"
                       target="_blank"
                       title="Send mail"
                     >
                       <AiOutlineMail />
                     </a>
                   </div>
-                  <div className="rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-110 ease-in duration-200 text-3xl text-[#5651e5]">
+                  <div className="rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-110 ease-in duration-200 text-3xl text-[#313fef]">
                     <a
                       href="assets/documents/cv.pdf"
                       download="CV Rony Ventura"
@@ -131,7 +131,7 @@ const Contact = () => {
         </div>
         <div className="flex justify-center py-12">
           <Link href="/">
-            <div className="rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-110 ease-in duration-200 text-3xl text-[#5651e5]">
+            <div className="rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-110 ease-in duration-200 text-3xl text-[#313fef]">
               <HiOutlineChevronDoubleUp />
             </div>
           </Link>

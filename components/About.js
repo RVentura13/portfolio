@@ -5,10 +5,10 @@ import Link from "next/link";
 
 const About = () => {
   return (
-    <div id="about" className="w-full md:h-screen p-2 flex items-center py-16">
+    <div id="about" className="w-full md:h-screen p-4 flex items-center">
       <div className="max-w-[1240px] m-auto md:grid grid-cols-3 gap-8">
         <div className="col-span-2">
-          <p className="uppercase tracking-widest text-[#5651e5] text-xl">
+          <p className="uppercase tracking-widest text-[#313fef] text-xl">
             About
           </p>
           <h2 className="py-4 text-gray-700">Who I Am</h2>
@@ -31,7 +31,7 @@ const About = () => {
             different projects as a practice of my skills which I show the most
             important in this portfolio.
           </p>
-          <p className="py-2 text-gray-600 underline cursor-pointer">
+          <p className="py-8 text-gray-600 underline cursor-pointer">
             <Link href="/#projects">Check out some of my latest projects.</Link>
           </p>
         </div>
